@@ -1,6 +1,6 @@
 # Example Node js project with express
 
-### How to run project
+### How to run projects
 ```
 npm install
 npm start
