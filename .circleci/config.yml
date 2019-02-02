@@ -22,9 +22,9 @@ jobs:
       - run:
         name: "Build docker image and push to docker hub"
         command: |
-          cp Dockerfile.production Dockerfile
-          docker build -t Osirisz/example-nodejs-express:lastest .
-          docker build -t Osirisz/example-nodejs-express:${CIRCLE_SHA1} .
-          docker push Osirisz/example-nodejs-express:lastest
-          docker push Osirisz/example-nodejs-express:${CIRCLE_SHA1}
+            cp Dockerfile.production Dockerfile
+            docker build -t Osirisz/example-nodejs-express:lastest .
+            docker build -t Osirisz/example-nodejs-express:${CIRCLE_SHA1} .
+            docker push Osirisz/example-nodejs-express:lastest
+            docker push Osirisz/example-nodejs-express:${CIRCLE_SHA1}
       - run: echo Done
